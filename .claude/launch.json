@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "rezistor-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8080", "-d", "/Users/tylinegar/Desktop/REZISTOR FILMS NEW/rezistor-site"],
+      "port": 8080
+    }
+  ]
+}
