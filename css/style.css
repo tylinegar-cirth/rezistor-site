@@ -68,7 +68,7 @@ h1, h2, h3 {
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 2.5rem;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.55) 50%, transparent 100%);
   pointer-events: none;
 }
 
@@ -168,6 +168,8 @@ h1, h2, h3 {
   background-size: contain;
   background-position: right center;
   background-repeat: no-repeat;
+  background-origin: content-box;
+  padding: 5.5rem 0 0;
 }
 
 .hero__slide::after {
