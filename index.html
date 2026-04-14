@@ -35,10 +35,10 @@
       <div class="hero__slide" style="background-image: url('images/projects/icefall.jpg'); background-color: #0a0a0a;"></div>
       <div class="hero__slide" style="background-image: url('images/projects/viper.png'); background-color: #111;"></div>
       <div class="hero__slide" style="background-image: url('images/projects/relentless.jpg'); background-color: #0d0d0d;"></div>
-      <div class="hero__slide" style="background-image: url('images/projects/ashes.jpg'); background-color: #0a0a0a;"></div>
-      <div class="hero__slide" style="background-image: url('images/projects/deadworld.jpg'); background-color: #0a0a0a;"></div>
       <div class="hero__slide" style="background-image: url('images/projects/thesavior.jpg'); background-color: #111;"></div>
       <div class="hero__slide" style="background-image: url('images/projects/switzerland.jpg'); background-color: #0d0d0d;"></div>
+      <div class="hero__slide" style="background-image: url('images/projects/ashes.jpg'); background-color: #0a0a0a;"></div>
+      <div class="hero__slide" style="background-image: url('images/projects/deadworld.jpg'); background-color: #0a0a0a;"></div>
     </div>
 
     <div class="hero__titles">
@@ -62,14 +62,6 @@
          data-director="Bren Foster"
          data-cast="Bren Foster · Amanda Righetti · Matt Passmore"
          data-status="Post-Production">Relentless</a>
-      <a href="projects/ashes.html" class="hero__title-link"
-         data-director="To Be Announced"
-         data-cast=""
-         data-status="Pre-Production">Ashes</a>
-      <a href="projects/deadworld.html" class="hero__title-link"
-         data-director="To Be Announced"
-         data-cast=""
-         data-status="In Development">Deadworld</a>
       <a href="projects/thesavior.html" class="hero__title-link"
          data-director="Russell Mulcahy"
          data-cast="Kate Beckinsale"
@@ -78,25 +70,39 @@
          data-director="Anton Corbijn"
          data-cast="Helen Mirren · Alden Ehrenreich · Olivia Cooke"
          data-status="Post-Production">Switzerland</a>
+      <a href="projects/ashes.html" class="hero__title-link"
+         data-director="To Be Announced"
+         data-cast=""
+         data-status="Pre-Production">Ashes</a>
+      <a href="projects/deadworld.html" class="hero__title-link"
+         data-director="To Be Announced"
+         data-cast=""
+         data-status="In Development">Deadworld</a>
     </div>
 
     <aside class="hero__meta" aria-live="polite">
-      <div class="hero__meta-eyebrow">
-        <span class="hero__meta-label">Featured</span>
-        <span class="hero__meta-counter"><span class="hero__meta-index">01</span> <span class="hero__meta-sep">/</span> <span class="hero__meta-total">09</span></span>
+      <div class="hero__meta-header">
+        <span class="hero__meta-brand">Rezistor&nbsp;/&nbsp;File</span>
+        <span class="hero__meta-counter">N<span class="hero__meta-deg">°</span><span class="hero__meta-index">001</span><span class="hero__meta-sep">/</span><span class="hero__meta-total">009</span></span>
       </div>
-      <div class="hero__meta-block">
-        <div class="hero__meta-label">Directed by</div>
-        <div class="hero__meta-value" data-field="director">Marc Furmie</div>
-      </div>
-      <div class="hero__meta-block" data-cast-block>
-        <div class="hero__meta-label">Starring</div>
-        <div class="hero__meta-value" data-field="cast">Angus Macfadyen · Doug Jones · Jaime King</div>
-      </div>
-      <div class="hero__meta-block">
-        <div class="hero__meta-label">Status</div>
-        <div class="hero__meta-value" data-field="status">Post-Production</div>
-      </div>
+      <div class="hero__meta-rule" aria-hidden="true"></div>
+      <dl class="hero__meta-rows">
+        <div class="hero__meta-row">
+          <dt class="hero__meta-key">DIR.</dt>
+          <dd class="hero__meta-val" data-field="director">Marc Furmie</dd>
+        </div>
+        <div class="hero__meta-row" data-cast-row>
+          <dt class="hero__meta-key">CAST</dt>
+          <dd class="hero__meta-val" data-field="cast">Angus Macfadyen · Doug Jones · Jaime King</dd>
+        </div>
+        <div class="hero__meta-row">
+          <dt class="hero__meta-key">STAT</dt>
+          <dd class="hero__meta-val hero__meta-val--status">
+            <span class="hero__meta-dot" aria-hidden="true"></span><span data-field="status">Post-Production</span>
+          </dd>
+        </div>
+      </dl>
+      <div class="hero__meta-footer" aria-hidden="true">CLASSIFIED&nbsp;·&nbsp;REZ-ARCHIVE</div>
     </aside>
 
     <div class="hero__progress" aria-hidden="true"></div>

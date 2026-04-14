@@ -37,7 +37,7 @@ function initHeroSlider() {
     root: document.querySelector('.hero__meta'),
     director: document.querySelector('.hero__meta [data-field="director"]'),
     cast: document.querySelector('.hero__meta [data-field="cast"]'),
-    castBlock: document.querySelector('.hero__meta [data-cast-block]'),
+    castRow: document.querySelector('.hero__meta [data-cast-row]'),
     status: document.querySelector('.hero__meta [data-field="status"]'),
     index: document.querySelector('.hero__meta-index')
   };
@@ -48,7 +48,7 @@ function initHeroSlider() {
   const INTERVAL = 5000;
 
   function pad(n) {
-    return n < 10 ? '0' + n : '' + n;
+    return n < 10 ? '00' + n : n < 100 ? '0' + n : '' + n;
   }
 
   function resetProgress() {
@@ -75,11 +75,11 @@ function initHeroSlider() {
       if (meta.cast) meta.cast.textContent = cast;
       if (meta.status) meta.status.textContent = status;
 
-      if (meta.castBlock) {
+      if (meta.castRow) {
         if (cast.trim() === '') {
-          meta.castBlock.setAttribute('data-empty', '');
+          meta.castRow.setAttribute('data-empty', '');
         } else {
-          meta.castBlock.removeAttribute('data-empty');
+          meta.castRow.removeAttribute('data-empty');
         }
       }
 
