@@ -77,15 +77,19 @@ h1, h2, h3 {
 }
 
 .nav__logo {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  color: var(--red);
-  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
 }
 
-.nav__logo:hover {
+.nav__logo img {
+  height: 28px;
+  width: auto;
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.nav__logo:hover img {
   opacity: 0.8;
 }
 
@@ -95,10 +99,10 @@ h1, h2, h3 {
 }
 
 .footer__logo img {
-  height: 60px;
+  height: 64px;
   width: auto;
   margin: 0 auto;
-  mix-blend-mode: screen;
+  display: block;
 }
 
 .nav__links {
